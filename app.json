@@ -1,0 +1,9 @@
+{
+  "name": "Python Flask Heroku Skeleton",
+  "description": "Skeleton for easily to deployed the flask with heroku.",
+  "image": "heroku/python",
+  "keywords": [
+    "python",
+    "flask"
+  ]
+}
