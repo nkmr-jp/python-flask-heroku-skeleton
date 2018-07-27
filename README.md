@@ -2,45 +2,29 @@
 
 ## Install to Mac
 
-1. setup heroku and pyenv command
-```sh
-$ brew install heroku pyenv
-```
-
-```
-# .bashrc
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-```
-
-```sh
-$ pyenv install 3.6.4
-$ pyenv global 3.6.4
-```
+1. install python.
+[anaconda](https://www.anaconda.com/download/#macos)
+or something
 
 2. setup pipenv
 ```sh
 $ pip install pipenv
-```
 
-```
 # .bashrc
-$ eval "$(pipenv --completion)"
+eval "$(pipenv --completion)"
 ```
 
+2. setup heroku command
+```sh
+$ brew install heroku
+$ heroku login
+```
 
 ## Running Locally
 
 1. download this repository
 2. move to downloaded directory
-3. pipenv install
-
-```sh
-$ pipenv install
-```
-
-4. add .env
+3. add .env
 ```
 HELLO_MESSAGE='hello world! .env file is enabled.'
 ```
@@ -60,5 +44,7 @@ $ python index.py
 ```sh
 heroku login
 heroku create
+heroku plugins:install heroku-config
+heroku config:push
 git push heroku master
 ```
