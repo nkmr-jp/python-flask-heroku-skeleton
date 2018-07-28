@@ -14,7 +14,7 @@ $ pip install pipenv
 eval "$(pipenv --completion)"
 ```
 
-2. setup heroku command
+3. setup heroku command
 ```sh
 $ brew install heroku
 $ heroku login
