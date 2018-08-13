@@ -31,11 +31,17 @@ HELLO_MESSAGE='hello world! .env file is enabled.'
 
 5. run apprication
 ```sh
+$ pipenv --python 3.7
+$ pipenv install
+```
+
+```sh     
 $ heroku local
      or
 $ pipenv shell
 $ python index.py
 ```
+
 6. access to 'http://localhost:5000'
 
 
